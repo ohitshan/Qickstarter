@@ -1,0 +1,11 @@
+.container:hover > div > a > div > h2 {
+  text-decoration: underline;
+}
+.container:hover > div > img {
+  cursor: pointer;
+}
+.title:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+  cursor: pointer;
+}

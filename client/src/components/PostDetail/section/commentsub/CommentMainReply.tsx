@@ -1,0 +1,47 @@
+import React, { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
+import { getReplyCommentsAsync } from "../../../../Slices/commentSlice";
+import CommentMainForm from "./CommentMainForm";
+
+function CommentMainReply({ item, isBacker }: any) {
+  const comment = useAppSelector((state: any) => state.comment.newComment);
+  const dispatch = useAppDispatch();
+  const [CommentLists, setCommentLists] = useState([]);
+  const [seemore, setSeemore] = useState(false);
+  useEffect(() => {
+    let body = {
+      postId: item?.postId,
+      responseTo: item?._id,
+    };
+    dispatch(getReplyCommentsAsync(body)).then((res: any) => {
+      if (res.payload.success) {
+        setCommentLists(res.payload.comments);
+      }
+    });
+  }, [dispatch, item, comment]);
+
+  const onClick = () => {
+    setSeemore(!seemore);
+  };
+
+  return (
+    <div style={{ marginLeft: "50px" }}>
+      {CommentLists.length > 0 && (
+        <div>
+          <span style={{ cursor: "pointer", color: "gray" }} onClick={onClick}>
+            see more comment({CommentLists.length})
+          </span>
+        </div>
+      )}
+      {seemore &&
+        CommentLists.map((comment, i) => (
+          <div key={i}>
+            <CommentMainForm item={comment} isBacker={isBacker} />
+            <CommentMainReply item={comment} isBacker={isBacker} />
+          </div>
+        ))}
+    </div>
+  );
+}
+
+export default CommentMainReply;

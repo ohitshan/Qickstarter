@@ -1,0 +1,22 @@
+.SettingTitle {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  padding: 0 18px;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.menuStyles > li {
+  padding-bottom: 10px !important;
+}
+
+.DeleteAddress {
+  text-decoration: underline;
+  color: #037362;
+}
+.DeleteAddress:hover {
+  cursor: pointer;
+}

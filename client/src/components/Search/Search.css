@@ -1,0 +1,11 @@
+.pac-item {
+  z-index: 2;
+}
+
+.MessageSearch > span > span {
+  background: white !important;
+  border-right: none;
+}
+.MessageSearch > span > input {
+  border-left: none;
+}

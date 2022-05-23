@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .main {
+    width: 100%;
+  }
+}
+.wrapper {
+  margin-top: 30px;
+  border-top: 5px solid #028858;
+  text-align: start;
+  margin-left: 20px;
+  width: 90%;
+}
+.wrapper h1 {
+  color: #666666;
+  margin: 0;
+}
+.wrapper h4 {
+  color: gray;
+}
+
+.linetag {
+  background: #e7ead9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  padding: 20px;
+  margin-top: 40px 0;
+}
+.linetagRow {
+  max-width: 1400px;
+  margin: 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .linetag {
+    /* height: 100%; */
+  }
+  .linetagRow {
+    margin: 40px 0;
+  }
+}
+.nav,
+.navFixed,
+.navsmallFixed {
+  width: 100%;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.navsmallFixed {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  background: white;
+}
+.navFixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: white;
+}
+.menuContainer {
+  max-width: 1400px;
+  width: 100%;
+}
+.rewardFixed {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  max-width: 330px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .rewardFixed {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .rewardFixed {
+    max-width: 250px;
+  }
+}
+
+.hoverContainer,
+.normalContainer {
+  border: 1px solid black;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.hoverContainer:hover {
+  border: none;
+}
+
+.hoverdiv,
+.normaldiv {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: transparent;
+  display: table;
+}
+.hoverdiv:hover {
+  background: #2eb669d7;
+  height: 100%;
+  width: 100%;
+  display: table;
+  cursor: pointer;
+}
+.contentdiv,
+.normalContent {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 20px;
+  transition: all ease 1s;
+  vertical-align: middle;
+}
+.contentdiv:hover {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  opacity: 5;
+  vertical-align: middle;
+  color: #e7ead9;
+  font-size: 20px;
+  transform: scale(1.2);
+}

@@ -1,0 +1,44 @@
+.Menu-Container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu-Container li span {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.navhome {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+}
+.navhome span {
+  margin: 10px;
+}
+
+.navhome .right {
+  width: 25%;
+  text-align: right;
+}
+.navhome .left {
+  width: 25%;
+  text-align: left;
+}
+
+.navhome .title {
+  color: green;
+  font-weight: 900;
+  font-size: x-large;
+  width: 50%;
+}
+
+.navhome span {
+  margin: 0 20px;
+  font-size: 15px;
+  cursor: pointer;
+}

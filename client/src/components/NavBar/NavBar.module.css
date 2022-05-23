@@ -1,0 +1,97 @@
+.ulhover:hover,
+.MyProjecthover:hover,
+.texthover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #028858;
+}
+.ulhover,
+.MyProjecthover {
+  list-style: none;
+}
+
+.container {
+  width: 500px;
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 300px;
+  }
+}
+
+/* .divHover:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blue;
+  transition: 0.5s;
+}
+.divHover:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blue;
+  transition: 0.5s;
+}
+.divContent {
+  z-index: 1;
+  display: flex;
+} */
+/* .divContent:hover {
+  color: white;
+  content: inherit;
+} */
+/* .divHover:hover::after {
+  width: 100%;
+  z-index: -1;
+}
+
+.divHover {
+  position: relative;
+}
+.divHover:hover {
+  color: white;
+  cursor: pointer;
+} */
+
+.divHover {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  display: flex;
+}
+.divHover:after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #028858;
+}
+.divHover:hover {
+  color: white;
+}
+.divHover:hover:after {
+  width: 100%;
+  z-index: -1;
+}

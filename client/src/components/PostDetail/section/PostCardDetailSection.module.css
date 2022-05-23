@@ -1,0 +1,38 @@
+.contentHover {
+  height: 200px;
+  overflow: hidden;
+}
+.contentHover:hover {
+  height: 300px;
+  transition: 0.7s;
+}
+
+.contentContainer {
+  border: 1px solid black;
+  padding: 20px;
+}
+.contentContainer:hover {
+  cursor: pointer;
+}
+
+.updatesComponentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .updatesComponentContainer {
+    width: 90%;
+  }
+}
+
+.likeUserList {
+  margin-left: 20px;
+  color: gray;
+  text-decoration: underline;
+}
+.likeUserList:hover {
+  cursor: pointer;
+}

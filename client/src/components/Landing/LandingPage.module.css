@@ -1,0 +1,143 @@
+.first {
+  text-align: center;
+  font-size: 36px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.max {
+  width: 1400px;
+  padding: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+@media screen and (max-width: 1400px) {
+  .max {
+    width: 100%;
+  }
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  padding-left: 0;
+  max-width: 1346px;
+  margin: 10px 50px;
+}
+.info li {
+  width: 100%;
+  height: 120px;
+  list-style: none;
+  border: 1px solid #0f0f0f;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1246px;
+  border-bottom: 1px solid black;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landingHr {
+  width: 1px;
+  color: #0f0f0f;
+}
+
+.buttons {
+  border-radius: 60%;
+  width: 28px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px 5px;
+  font-size: 14px;
+  border: 0.1px solid #b9b9b9;
+  background: white;
+  color: #464646;
+  font-weight: bolder;
+}
+.buttons:hover,
+.clickedButtons:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.clickedButtons {
+  border-radius: 60%;
+  width: 28px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px 5px;
+  font-size: 14px;
+  border: 0.1px solid orange;
+  background: white;
+  color: orange;
+  font-weight: bolder;
+}
+
+.titleHoverUnderline {
+  text-decoration: underline;
+}
+
+.postCardMain {
+  position: absolute;
+  z-index: 3;
+}
+.postCardMain:hover {
+  z-index: 1;
+}
+
+.likeComponent {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 2%;
+}
+.likeComponent > div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.likeComponent > div > button {
+  margin-bottom: 5px;
+}
+.likeComponent:hover {
+  z-index: 4;
+}
+@media screen and (max-width: 768px) {
+  .postCardMain {
+    position: relative;
+    z-index: 3;
+  }
+  .likeComponent > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .likeComponent {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+    left: 0;
+    background: none;
+    width: 100%;
+    position: relative;
+  }
+}

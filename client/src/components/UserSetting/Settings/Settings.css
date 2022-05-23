@@ -1,0 +1,12 @@
+.ant-menu > .ant-menu-item:hover,
+.ant-menu > .ant-menu-item-active,
+.ant-menu > .ant-menu-item-open,
+.ant-menu > .ant-menu-item-selected {
+  color: #037362 !important;
+}
+.ant-menu > .ant-menu-item:hover::after,
+.ant-menu > .ant-menu-item-active::after,
+.ant-menu > .ant-menu-item-open::after,
+.ant-menu > .ant-menu-item-selected::after {
+  border-bottom: 5px solid #037362 !important;
+}

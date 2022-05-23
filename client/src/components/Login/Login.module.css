@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  align-items: center;
+}
+.account {
+  text-align: center;
+  color: darkgray;
+}
+.create {
+  cursor: pointer;
+}
+
+.hrsect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 16px;
+  margin: 4px 0px;
+}
+.hrsect::before,
+.hrsect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}

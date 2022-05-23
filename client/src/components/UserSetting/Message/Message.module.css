@@ -1,0 +1,35 @@
+.imageDiv {
+  width: 20%;
+  height: 60%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .imageDiv {
+    width: 23%;
+    height: 60%;
+  }
+}
+.messageFormDiv {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+}
+
+.messageFormDiv:hover {
+  cursor: pointer;
+}
+.messageContentDiv {
+  margin-top: 10px;
+  height: 60px;
+  overflow: hidden;
+}
+.messageFormDiv:hover > .messageContentDiv {
+  height: 100px;
+  transition: all 1s;
+}
+
+.ClickedMessageContentDiv {
+  height: auto;
+}

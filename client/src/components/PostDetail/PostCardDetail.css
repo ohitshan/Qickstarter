@@ -1,0 +1,18 @@
+.ant-anchor-ink {
+  height: 0px !important;
+  width: 0px;
+}
+
+.ant-anchor-link.story {
+  border-bottom: 1px solid gainsboro;
+}
+.ant-anchor-link.story {
+  padding: 20px;
+  padding-left: 0;
+  text-align: start;
+}
+.ant-anchor-link.risks {
+  padding: 20px;
+  padding-left: 0;
+  text-align: start;
+}
