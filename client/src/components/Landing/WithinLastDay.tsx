@@ -7,7 +7,7 @@ import {
 import { getPostsAsync } from "../../Slices/postSlice";
 import styles from "./LandingPage.module.css";
 
-function First() {
+function WithinLastDay() {
   const dispatch = useAppDispatch();
   const backing = useAppSelector((state: any) => state.payment);
   const [inLastDayFundedProject, setInLastDayFundedProject] = useState(0);
@@ -102,4 +102,4 @@ function First() {
   );
 }
 
-export default First;
+export default WithinLastDay;

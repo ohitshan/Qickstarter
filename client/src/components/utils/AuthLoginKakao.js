@@ -5,9 +5,9 @@ import qs from "qs";
 import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
-  const REST_API_KEY = "32f98e56985ea93c617ac50ceca750bf";
+  const REST_API_KEY = process.env.REACT_APP_REST_API_KEY;
   const REDIRECT_URI = "http://localhost:3000/oauth/kakao/login/callback";
-  const CLIENT_SECRET = "SNpUhN8JLzAcQYgN3FSpzQL7D37mVSqm";
+  const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET;
 
   // calllback으로 받은 인가코드
   const code = new URL(window.location.href).searchParams.get("code");

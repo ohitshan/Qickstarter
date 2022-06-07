@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useAppDispatch } from "../../app/hooks";
 import { getPostsAsync } from "../../Slices/postSlice";
-import First from "./First";
 import PostCard from "./PostCard";
 import { Row, Col } from "antd";
 import styles from "./LandingPage.module.css";
 import PostCardMain from "./PostCardMain";
 import { NavBar } from "../NavBar/NavBar";
 import { Project } from "../types";
+import WithinLastDay from "./WithinLastDay";
 
 function LandingPage() {
   const dispatch = useAppDispatch();
@@ -26,7 +26,7 @@ function LandingPage() {
     <div>
       <NavBar />
       <div className={styles.container}>
-        <First />
+        <WithinLastDay />
         <Row gutter={60} className={styles.max}>
           <Col xs={24} md={14}>
             <div style={{ textAlign: "left" }}>FEATURED PROJECT</div>
